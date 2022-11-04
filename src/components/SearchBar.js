@@ -2,7 +2,7 @@ import { StyleSheet, TextInput, View } from 'react-native';
 import React from 'react';
 import { FontAwesome } from '@expo/vector-icons';
 
-const SearchBar = ({ term, onTermChange }) => {
+const SearchBar = ({ term, onTermChange, onTermSubmit }) => {
   return (
     <View style={styles.backgroundStyle}>
       <FontAwesome name='search' style={styles.iconStyle} />
@@ -12,9 +12,8 @@ const SearchBar = ({ term, onTermChange }) => {
         style={styles.inputStyle}
         placeholder='Search...'
         value={term} //value is always the current state object
-        onChangeText={(newText) => {
-          onTermChange(newText);
-        }}
+        onChangeText={onTermChange} //Here we just call the instace of property, its same as -> onChangeText={(newText) => { onTermChange(newText) }}
+        onEndEditing={onTermSubmit} //we call this to when we wish to initiate respose after hitting okay of done button on mobile keyboard
       />
     </View>
   );
