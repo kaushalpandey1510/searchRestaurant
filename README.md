@@ -1,6 +1,6 @@
 ﻿# searchRestaurant
  
- //This hybrid mobile application build on React Native! 
+ //Hybrid mobile application build on React Native! 
  
  //In this app, user can serach restaurants in Toronto and they will get results on basis of 3 spending categories. 
  
