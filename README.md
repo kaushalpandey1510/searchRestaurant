@@ -14,6 +14,11 @@
                             
 
 //Third party API was used from yelp to get real time data
+
 //Axios is used to make HTTP request and async/await to make it work as ordinary synchronous function
+
+
 //Created a custom hook useResult to display the results on Search Screen
+
+
 //Created multiple reusable components
